@@ -7,11 +7,18 @@ A Python application with GUI allowing to stream the ECG signal of a [Polar H10]
 Please note that this software is not intended to expose all features and settings of the Polar H10 device! Additionally, not all types of errors are handled. In worst case the software has to be restarted.
 
 ## Features
+* works on Windows (10) and Linux
 * scan and select Polar H10 device via GUI
 * set the settings of the TCP client via GUI
 * stream ECG data (binary: signed 16 bit integer) at about 130 Hz to an TCP server
 * shows current battery level, heart rate, ECG signal and sample rate of ECG signal
 * a sample SSI pipeline which can receive the ECG signal is provided in the "SSI" directory of this repository.
+
+
+## Setup
+* Python 3.10 (tested)
+
+pip install -r requirements.txt
 
 ## Usage
 1. start TCP server e.g. the sample SSI pipeline
