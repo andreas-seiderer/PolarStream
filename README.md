@@ -13,4 +13,13 @@ Please note that this software is not intended to expose all features and settin
 * shows current battery level, heart rate, ECG signal and sample rate of ECG signal
 * a sample SSI pipeline which can receive the ECG signal is provided in the "SSI" directory of this repository.
 
+## Usage
+1. start TCP server e.g. the sample SSI pipeline
+2. put on Polar H10 sensor
+3. click on "Scan" -> the sensor should appear in the list (the device ID is also printed on the side of the sensor)
+4. select the device from the list
+5. click on "Connect and stream data" -> this can take a moment where nothing seems to happen
+6. the heart rate (HR) and battery level should be shown first; after a while also the ECG signal is plotted as it is sent to the TCP server
+7. to stop the streaming press "Stop" (you should do this before stopping the TCP server e.g. the SSI pipeline)
+
 ![Screenshot](/Polar%20Stream.png)
