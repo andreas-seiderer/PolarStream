@@ -4,7 +4,7 @@ A Python application with GUI allowing to stream the ECG signal of a [Polar H10]
 * https://github.com/polarofficial/polar-ble-sdk
 * https://github.com/polarofficial/polar-ble-sdk/issues/226#issuecomment-1074824570
 
-Please note that this software is not intended to expose all features and settings of the Polar H10 device! Additionally, not all types of errors are handled.
+Please note that this software is not intended to expose all features and settings of the Polar H10 device! Additionally, not all types of errors are handled. In worst case the software has to be restarted.
 
 ## Features
 * scan and select Polar H10 device via GUI
