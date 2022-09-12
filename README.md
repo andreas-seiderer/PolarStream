@@ -4,7 +4,7 @@ A Python application with GUI allowing to stream the ECG signal of a [Polar H10]
 * https://github.com/polarofficial/polar-ble-sdk
 * https://github.com/polarofficial/polar-ble-sdk/issues/226#issuecomment-1074824570
 
-Please note that this software is not intended to expose all features and settings of the Polar H10 device!
+Please note that this software is not intended to expose all features and settings of the Polar H10 device! Additionally, not all types of errors are handled.
 
 ## Features
 * scan and select Polar H10 device via GUI
@@ -15,7 +15,7 @@ Please note that this software is not intended to expose all features and settin
 
 ## Usage
 1. start TCP server e.g. the sample SSI pipeline
-2. put on Polar H10 sensor
+2. put on Polar H10 sensor (from this point please make sure to stay with the sensor nearby your Bluetooth receiver at all times)
 3. click on "Scan" -> the sensor should appear in the list (the device ID is also printed on the side of the sensor)
 4. select the device from the list
 5. click on "Connect and stream data" -> this can take a moment where nothing seems to happen
