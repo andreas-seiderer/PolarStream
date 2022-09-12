@@ -1,0 +1,7 @@
+async-timeout==4.0.2
+bleak==0.16.0
+PySide6==6.3.1
+PySide6-Addons==6.3.1
+PySide6-Essentials==6.3.1
+shiboken6==6.3.1
+typing_extensions==4.3.0

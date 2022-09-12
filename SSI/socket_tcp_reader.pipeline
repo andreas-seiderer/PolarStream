@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<pipeline ssi-v="1">
+	
+	<!-- register dlls -->
+	<register>
+		<load name="ioput"/>
+		<load name="graphic"/>
+		<load name="signal"/>
+	</register>
+	
+
+	<sensor create="SocketReader" url="tcp://127.0.0.1:8888" format="0" ssr="130.0" sdim="1" sbyte="2" stype="3">		
+		<output channel="socket" pin="ecg"/>
+	</sensor>	
+	
+	
+	<!-- visualization -->
+	<consumer create="SignalPainter:plot" title="ecg" size="10.0">
+		<input pin="ecg" frame="0.2s" />		
+	</consumer>	
+	
+	<!-- decoration -->
+	<object create="Decorator" icon="true" title="ECG Pipeline" origin="0,0">
+		<area pos="0,0,400,600">console</area>
+		<area pos="400,0,400,600">plot*,monitor</area>		
+	</object>
+
+</pipeline>
